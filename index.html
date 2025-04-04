@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const path = window.location.pathname + window.location.search + window.location.hash;
+      const newUrl = 'https://sny0.com' + path;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    Redirecting to <a id="link" href="#">sny0.com</a>...
+    <script>
+      document.getElementById('link').href = newUrl;
+    </script>
+  </body>
+</html>
