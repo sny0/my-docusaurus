@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <script>
-      // 現在のURLのパスとクエリを保持
-      const path = window.location.pathname + window.location.search + window.location.hash;
-      // 新しいURLにリダイレクト（httpsの部分は必要ならhttpに変更してOK）
-      const newUrl = 'https://sny0.github.io' + path;
-      window.location.replace(newUrl);
-    </script>
-  </head>
-  <body>
-    Redirecting to <a id="link" href="#">sny0.com</a>...
-    <script>
-      document.getElementById('link').href = newUrl;
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // 現在のURLのpathから `/my-docusaurus` を削除
+    const newPath = window.location.pathname.replace(/^\/my-docusaurus/, '');
+    const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
+    window.location.replace(newUrl);
+  </script>
+</head>
+<body>
+  Redirecting to <a id="link" href="#">new location</a>...
+  <script>
+    document.getElementById('link').href = newUrl;
+  </script>
+</body>
 </html>
