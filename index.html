@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
+      // 現在のURLのパスとクエリを保持
       const path = window.location.pathname + window.location.search + window.location.hash;
-      const newUrl = 'https://youtube.com';
+      // 新しいURLにリダイレクト（httpsの部分は必要ならhttpに変更してOK）
+      const newUrl = 'https://sny0.com' + path;
       window.location.replace(newUrl);
     </script>
   </head>
