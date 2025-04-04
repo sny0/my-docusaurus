@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // 今のURLから /my-docusaurus を除去
+      const path = window.location.pathname.replace(/^\/my-docusaurus/, '');
+      const newUrl = window.location.origin + path + window.location.search + window.location.hash;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
