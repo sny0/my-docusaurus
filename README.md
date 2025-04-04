@@ -1,2 +1,2 @@
 # redirect
-www.sny0.com -> sny0.com にリダイレクトする
+sny0.github.io/my-docusaurus -> sny0.github.io にリダイレクトする
